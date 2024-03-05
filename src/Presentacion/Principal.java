@@ -37,7 +37,7 @@ public class Principal {
                     default:
                         System.out.println("Opción inválida.");
                 }
-            } catch (IllegalArgumentException | ArithmeticException e) {
+            } catch (Exception e) {
                 System.out.println("Error: " + e.getMessage());
             }
         }
