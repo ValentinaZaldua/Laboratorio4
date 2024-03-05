@@ -69,7 +69,12 @@ public class Principal {
         int r = scanner.nextInt();
         long combinacion = Calculadora.calcularCombinacion(n, r);
         System.out.println("El resultado de la combinatoria (" + n + "C" + r + ") es: " + combinacion);
-
+        
+        long permutacion = Calculadora.Permutacion(n);
+        System.out.println("El resultado de la permutacion es: " + permutacion);
+        
+        long variacion = Calculadora.calcularVariacion(n, r);
+        System.out.println("El resultado de la variacion (" + n + "C" + r + ") es: " + variacion);
 	}
 
 }

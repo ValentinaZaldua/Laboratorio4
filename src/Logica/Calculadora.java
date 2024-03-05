@@ -16,7 +16,7 @@ public class Calculadora {
 		}else if(n<0) {
 			throw new Exception ("No se puede calcular el factorial de u numero negativo");
 		}
-		else if(n>11) {
+		else if(n>21) {
 			throw new Exception("Excede long");
 		}
 	
@@ -26,12 +26,12 @@ public class Calculadora {
         }
        
 	
-	 public static long Permutacion(int n, int r) throws Exception {
+	 public static long Permutacion(int n) throws Exception {
 	        if (n < 0 ) {
 	            throw new Exception("No se permiten valores negativos en la permutación.");
 	        }
 	        
-	        return Factorial(n) / Factorial(n - r);
+	        return Factorial(n);
 	    }
 
 		public static long calcularVariacion(int n, int r) throws Exception {
